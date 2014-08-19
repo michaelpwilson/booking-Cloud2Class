@@ -1,0 +1,262 @@
+footer .copy {
+  font-size: 16px;
+  padding: 20px;
+  color: white;
+}
+form {
+padding:20px;
+width:80%;
+}
+form .small {
+max-width:25%;
+}
+form .medium {
+max-width: 50%;
+} 
+@media(max-width:767px){
+form {
+width:100%;
+}
+form .medium {
+max-width:75%;
+}
+}
+.js-float-label-wrapper label {
+	font-weight: 500;
+	margin-top:-9px;
+}
+
+.js-float-label-wrapper.focused label,
+.js-float-label-wrapper.populated label {
+	color: #D42D51;
+}
+
+.js-float-label-wrapper.focused.populated label {
+	color: #BB2747;
+}
+.form-control {
+height:50px;
+margin-top:5px;
+}
+ body {
+  background: #eee;
+  font-family: 'Droid Sans', sans-serif;
+ }
+ .navbar-default {
+  background-color: #FFFFFF;
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  height:110px;
+  padding-right: 5px;
+  padding-left: 5px;
+ }
+ .navbar-default text {
+  position: absolute;
+  top: 55px;
+  margin-left: 120px;
+  font-variant: small-caps;
+  font-size: 46px;
+ }
+ .navbar-default .logo {
+  background-image: url('../images/pi-projects.png');
+  background-size: cover;
+  min-height:100px;
+  margin-top:5px;
+  width:113px;
+ }
+ .navbar-default .facebook {
+  background-image: url('../images/facebook-icon.png');
+  background-size: cover;
+  min-height: 96px;
+  width: 80px;
+  float: right;
+  margin-top: -97px;
+ }
+ .navbar-default .twitter {
+  background-image: url('../images/twitter-icon.png');
+  background-size: cover;
+  min-height: 96px;
+  width: 80px;
+  float: right;
+  margin-top: -97px;
+  margin-right: 83px;
+ }
+ @media (max-width: 992px) { 
+  .navbar-default text {
+   font-size: 34px;
+  }
+ }
+ @media (max-width: 678px) { 
+  .navbar-default text {
+   display:none;
+  }
+  .navbar-default {
+   height: 73px;
+  }
+  .navbar-default .logo {
+   min-height: 65px;
+   width: 72px;
+  }
+  .navbar-default .twitter {
+   min-height: 67px;
+   width: 64px;
+   margin-top: -67px;
+   margin-right:0;
+  }
+  .navbar-default .facebook { 
+   min-height: 68px;
+   width: 57px;
+   margin-top: -67px;
+  }
+ }
+ header {
+  background-size: cover;
+  min-height: 300px;
+ }
+ .cpd {
+  background-image: url('../images/header.jpg');
+ }
+ .booking {
+  background-image: url('http://www.brightprocess.com/wp-content/uploads/2013/05/header1.jpg');
+ }
+ .col-sm-1 img {
+ height:72px;
+ }
+ 
+ @media (max-width: 990px) {
+  header {
+  background-position:-320px;
+  }
+ }
+ @media (max-width: 670px) {
+  header { 
+  background-position:-421px;
+  }
+ }
+ @media (min-width: 991px) {
+  .col-sm-6 img { 
+  padding:25px;
+  }
+ }
+ .col-xs-11 .lead { 
+  padding-top:33px;
+  padding-left:20px;
+ }
+ @media (max-width:991px) {
+  .col-xs-11 .lead { 
+   padding-left:61px;
+  }
+ }
+ .pi-info {
+ height: 120px;
+ }
+ @media (max-width: 404px) {
+  .col-xs-11 .lead { 
+   padding-left:0;
+   padding-top:20px;
+  }
+  .pi-info {
+   height: 280px;
+  }
+ }
+ #section_holder {
+ background:#fff;
+ }
+ .section-default {
+  min-height: 227px;
+  padding-top: 40px;
+  background: #fff;
+ }
+ .section-grey {
+  min-height: 227px;
+  padding-top: 0;
+  background: #e6e3de;
+ }
+ .section-orange {
+  min-height: 227px;
+  padding-top: 0;
+  background: #fff;
+  border:2px solid orange;
+ }
+ section .header {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 60px;
+  margin-left: -19px;
+  width: 100%;
+ }
+ .para {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  overflow: hidden;
+ }
+ .whats_different .header {
+  background-image: url('../images/red-title.png');
+ }
+ .book_workshop .header {
+  background-image: url('../images/book-workshop.png');
+ }
+ .pi_projects .header {
+  background-image: url('../images/blue-title.png');
+ }
+ .pi_projects ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
+ }
+ .pi_projects ul li{
+ font-size:19px;
+ line-height:33px;
+ list-style-image: url('../images/bluedot.png');
+ }
+ .col-sm-6 {
+ padding-left:0;
+ padding-right:0;
+ }
+ .col-sm-6 ul {
+ margin-left: -20px;
+ }
+ .want_more .header {
+  background-image: url('../images/yellow-title.png');
+ }
+ .want_more ul b {
+  font-size:17px;
+  right: 20px;
+  position: relative;
+ }
+ .want_more ul li { 
+  font-size:18px;
+  list-style-image: url('../images/orangedot.png');
+  line-height:35px;
+ }
+ footer {
+  background: black;
+  min-height: 300px;
+  padding: 17px;
+  overflow: hidden;
+ }
+ footer .col-sm-3 a{
+  font-size: 19px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  top: 8px;
+ }
+ footer .col-sm-3 a img {
+  width: 30px;
+ }
+ .big-orange {
+  font-size: 31px;
+  color: orange;
+ }
+ footer .brought {
+  text-align: center;
+  padding-top: 96px;
+  color: white;
+}
+@media (min-width: 768px) {
+.lead {
+font-size: 18px;
+}
+}
