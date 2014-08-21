@@ -5,6 +5,7 @@ var DatepickerDemoCtrl = function ($scope, $http) {
     $scope.dt = new Date();
   };
   $scope.today();
+
   $scope.clear = function () {
     $scope.dt = null;
   };
@@ -25,8 +26,10 @@ var DatepickerDemoCtrl = function ($scope, $http) {
 
     $scope.opened = true;
   };
+
   $scope.dateOptions = {
-    formatYear: 'yy'
+    formatYear: 'yy',
+    startingDay: 1
   };
 
   $scope.initDate = new Date('2016-15-20');
@@ -49,23 +52,10 @@ var DatepickerDemoCtrl = function ($scope, $http) {
   $scope.phoneNumber = '';
   $scope.emailAddress = '';
   $scope.sessions = [
-     {id:'five', name:'5-session'},
-     {id:'twelve', name:'12-session'},
+     {name:'5-session'},
+     {name:'12-session'},
   ];
   $scope.mySession = '';
-  $scope.fiveSession = [
-     {ref:'osfwr', name:'Operating System fundamentals with Raspbian'},
-     {ref:'pcposb', name:'Project-coding: Python or Scratch basics'},
-     {ref:'fon', name:'Fundamentals of networking'}
-  ];
-  $scope.twelveSession = [
-     {ref:'ntiatc', name:'Networking, The Internet, and The Cloud'},
-     {ref:'pcpos', name:'Project-coding: Python or Scratch'},
-     {ref:'tlos', name:'The Linux Operating System'}
-  ];
-  $scope.myCourse = '';
-  $scope.audience = '';
-  $scope.numOfPeople = '';
   
   // process the form
   $scope.processForm = function() {
@@ -83,7 +73,7 @@ var DatepickerDemoCtrl = function ($scope, $http) {
   ];
 	$http({
         method  : 'POST',
-        url     : '/cpd/mail.php',
+        url     : 'https://dev.cloud2class.com/cpd/mail.php',
         data    : formData,
         headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  // set the headers so angular passing info as form data (not request payload)
         }).success(function(data) {
